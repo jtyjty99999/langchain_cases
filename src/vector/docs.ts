@@ -28,6 +28,7 @@ const run = async () => {
   const question = "什么蜜蜂没有蛰针，请用中文回答。";
   const relevantDocs = await store.similaritySearch(question);
 
+  
   // Call the chain
   const res = await chain.call({
     input_documents: relevantDocs,

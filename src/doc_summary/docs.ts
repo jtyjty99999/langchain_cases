@@ -10,7 +10,6 @@ import { fileURLToPath } from 'node:url';
 dotenv.config();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-
 const run = async () => {
     // In this example, we use a `MapReduceDocumentsChain` specifically prompted to summarize a set of documents.
     const text = fs.readFileSync(path.join(__dirname, "./resume.txt")).toString();
